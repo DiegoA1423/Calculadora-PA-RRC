@@ -1,9 +1,11 @@
 import pandas as pd
-
+# IMPORTANTE: Si deseas probar este código en tu equipo,
+# asegúrate de cambiar la ruta al archivo de mortalidad a la ubicación donde lo tengas guardado.
 # Cargar la tabla de mortalidad
 
 df_mortalidad = pd.read_csv("C:\\Users\\celes\\OneDrive\\Actuariales\\ALTUM\\Mortalidad.csv")
 
+# Alternativa con variable: también asegúrate de modificar esta ruta si ejecutas en otra máquina.
 ruta = r"C:\Users\celes\OneDrive\Actuariales\ALTUM\Mortalidad.csv"
 df_mortalidad = pd.read_csv(ruta)
 
@@ -224,6 +226,7 @@ def Reservas(tipo, producto, cobertura, pagos, edad1, edad2, SAF, tipo_crecimien
     return Reserva,pnu 
 
 #Procesamiento del archivo de pólizas y guardado de resultados
+# 📌 IMPORTANTE: Modifica esta ruta según la ubicación del archivo de pólizas en tu computadora.
 ruta_polizas = r"C:\Users\celes\OneDrive\Desktop\Resultados_reservas.csv"
 df_polizas = pd.read_csv(ruta_polizas)
 
@@ -246,6 +249,7 @@ def aplicar_insumos(row):
 
 df_polizas[['RRC','npnu']] = df_polizas.apply(aplicar_insumos, axis=1)
 
+# IMPORTANTE: Cambia esta ruta si deseas guardar los resultados en otra ubicación.
 ruta_resultados = r"C:\Users\celes\OneDrive\Desktop\Resultados_reservas.csv"
 df_polizas.to_csv(ruta_resultados, index=False)
 
