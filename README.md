@@ -23,6 +23,10 @@ Este proyecto fue desarrollado como parte de una simulación de aseguradora en l
 - Python + Pandas
 - Excel / CSV para entrada y salida de datos
 
+## ⚠️ Notas importantes
+- Este código utiliza rutas absolutas para cargar y guardar archivos CSV.
+- Si deseas probar el código, **debes cambiar las rutas en las líneas indicadas** del script principal para que apunten a los archivos en tu propia computadora.
+
 ## 👨‍💻 Autor
 
 **Diego Arias Montañez**  
