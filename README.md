@@ -26,6 +26,7 @@ Este proyecto fue desarrollado como parte de una simulación de aseguradora en l
 ## ⚠️ Notas importantes
 - Este código utiliza rutas absolutas para cargar y guardar archivos CSV.
 - Si deseas probar el código, **debes cambiar las rutas en las líneas indicadas** del script principal para que apunten a los archivos en tu propia computadora.
+- Para las mas de 15000 polizas el codigo tardara aprox 40 min en ejecutarse, asi que se puede reducir el numero de polizas o revisar el archivo Resultados para visualizar el ejemplo de como regresa el archivo terminado
 
 ## 👨‍💻 Autor
 
